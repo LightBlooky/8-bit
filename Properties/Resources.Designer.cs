@@ -136,5 +136,15 @@ namespace Launch.Properties {
                 return ResourceManager.GetStream("Unity", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Скриншот_14_04_2020_023602 {
+            get {
+                object obj = ResourceManager.GetObject("Скриншот 14-04-2020 023602", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -37,6 +37,7 @@
             this.ex_btn = new System.Windows.Forms.Button();
             this.gif = new System.Windows.Forms.PictureBox();
             this.draggy = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gif)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,14 +102,16 @@
             // 
             // soundbtn
             // 
+            this.soundbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(49)))), ((int)(((byte)(87)))));
             this.soundbtn.BackgroundImage = global::Launch.Properties.Resources.sound_off;
+            this.soundbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.soundbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.soundbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.soundbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.soundbtn.Location = new System.Drawing.Point(109, 144);
             this.soundbtn.Name = "soundbtn";
             this.soundbtn.Size = new System.Drawing.Size(50, 50);
             this.soundbtn.TabIndex = 4;
-            this.soundbtn.UseVisualStyleBackColor = true;
+            this.soundbtn.UseVisualStyleBackColor = false;
             this.soundbtn.Click += new System.EventHandler(this.soundbtn_Click_1);
             // 
             // ex_btn
@@ -137,13 +140,30 @@
             // draggy
             // 
             this.draggy.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.draggy.Location = new System.Drawing.Point(2, 2);
+            this.draggy.Location = new System.Drawing.Point(33, 2);
             this.draggy.Name = "draggy";
-            this.draggy.Size = new System.Drawing.Size(216, 31);
+            this.draggy.Size = new System.Drawing.Size(185, 31);
             this.draggy.TabIndex = 7;
             this.draggy.MouseDown += new System.Windows.Forms.MouseEventHandler(this.draggy_MouseDown);
             this.draggy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.draggy_MouseMove);
             this.draggy.MouseUp += new System.Windows.Forms.MouseEventHandler(this.draggy_MouseUp);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Launch.Properties.Resources.Скриншот_14_04_2020_023602;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(3, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(24, 14);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "-";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form
             // 
@@ -152,6 +172,7 @@
             this.BackgroundImage = global::Launch.Properties.Resources.Sweetie_Bot_v_2_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 332);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.draggy);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.gif);
@@ -161,8 +182,10 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(49)))), ((int)(((byte)(87)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form";
+            this.Opacity = 0.95D;
             this.Text = "8-bit";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gif)).EndInit();
@@ -181,6 +204,7 @@
         private System.Windows.Forms.Button ex_btn;
         private System.Windows.Forms.PictureBox gif;
         private System.Windows.Forms.Panel draggy;
+        private System.Windows.Forms.Button button1;
     }
 }
 
