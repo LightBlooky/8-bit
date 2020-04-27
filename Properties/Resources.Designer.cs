@@ -111,6 +111,86 @@ namespace Launch.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap i01_61xXvEXqjbL__SL1313_ {
+            get {
+                object obj = ResourceManager.GetObject("i01_61xXvEXqjbL__SL1313_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i01_61xXvEXqjbL__SL1313___1_ {
+            get {
+                object obj = ResourceManager.GetObject("i01_61xXvEXqjbL__SL1313___1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i01_sound_off {
+            get {
+                object obj = ResourceManager.GetObject("i01_sound_off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i01_sound_off__1_ {
+            get {
+                object obj = ResourceManager.GetObject("i01_sound_off__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i01_Скриншот_14_04_2020_023602 {
+            get {
+                object obj = ResourceManager.GetObject("i01_Скриншот_14_04_2020_023602", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap i01_Скриншот_14_04_2020_023602__1_ {
+            get {
+                object obj = ResourceManager.GetObject("i01_Скриншот_14_04_2020_023602__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_arrow_repeat_once_45844 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_arrow_repeat_once_45844", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Gnome_Media_Playlist_Repeat_32_55080 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Gnome_Media_Playlist_Repeat_32_55080", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sound_off {
             get {
                 object obj = ResourceManager.GetObject("sound_off", resourceCulture);
@@ -134,6 +214,16 @@ namespace Launch.Properties {
         internal static System.IO.UnmanagedMemoryStream Unity {
             get {
                 return ResourceManager.GetStream("Unity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Папуг {
+            get {
+                object obj = ResourceManager.GetObject("Папуг", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

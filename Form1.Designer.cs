@@ -37,15 +37,19 @@
             this.ex_btn = new System.Windows.Forms.Button();
             this.gif = new System.Windows.Forms.PictureBox();
             this.draggy = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rep_btn = new System.Windows.Forms.PictureBox();
+            this.hid_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gif)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rep_btn)).BeginInit();
             this.SuspendLayout();
             // 
             // btn1
             // 
             this.btn1.BackColor = System.Drawing.Color.Red;
             this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn1.Location = new System.Drawing.Point(22, 251);
@@ -77,7 +81,10 @@
             // 
             this.btn2.BackColor = System.Drawing.SystemColors.Highlight;
             this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn2.Font = new System.Drawing.Font("Comic Sans MS", 9.25F);
+            this.btn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F);
             this.btn2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn2.Location = new System.Drawing.Point(112, 251);
             this.btn2.Name = "btn2";
@@ -91,7 +98,10 @@
             // 
             this.btn3.BackColor = System.Drawing.Color.Yellow;
             this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(0)))));
+            this.btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(62)))));
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Font = new System.Drawing.Font("Comic Sans MS", 8.75F);
             this.btn3.Location = new System.Drawing.Point(203, 251);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(69, 44);
@@ -113,6 +123,9 @@
             this.soundbtn.TabIndex = 4;
             this.soundbtn.UseVisualStyleBackColor = false;
             this.soundbtn.Click += new System.EventHandler(this.soundbtn_Click_1);
+            this.soundbtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.soundbtn_MouseDown);
+            this.soundbtn.MouseLeave += new System.EventHandler(this.soundbtn_MouseLeave);
+            this.soundbtn.MouseMove += new System.Windows.Forms.MouseEventHandler(this.soundbtn_MouseMove);
             // 
             // ex_btn
             // 
@@ -126,6 +139,9 @@
             this.ex_btn.TabIndex = 5;
             this.ex_btn.UseVisualStyleBackColor = true;
             this.ex_btn.Click += new System.EventHandler(this.ex_btn_Click);
+            this.ex_btn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ex_btn_MouseDown);
+            this.ex_btn.MouseLeave += new System.EventHandler(this.ex_btn_MouseLeave);
+            this.ex_btn.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ex_btn_MouseMove);
             // 
             // gif
             // 
@@ -134,8 +150,11 @@
             this.gif.Location = new System.Drawing.Point(215, 98);
             this.gif.Name = "gif";
             this.gif.Size = new System.Drawing.Size(62, 53);
+            this.gif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gif.TabIndex = 6;
             this.gif.TabStop = false;
+            this.gif.MouseEnter += new System.EventHandler(this.gif_MouseEnter);
+            this.gif.MouseLeave += new System.EventHandler(this.gif_MouseLeave);
             // 
             // draggy
             // 
@@ -148,22 +167,36 @@
             this.draggy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.draggy_MouseMove);
             this.draggy.MouseUp += new System.Windows.Forms.MouseEventHandler(this.draggy_MouseUp);
             // 
-            // button1
+            // rep_btn
             // 
-            this.button1.BackgroundImage = global::Launch.Properties.Resources.Скриншот_14_04_2020_023602;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(3, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(24, 14);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "-";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.rep_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rep_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rep_btn.Location = new System.Drawing.Point(120, 206);
+            this.rep_btn.MaximumSize = new System.Drawing.Size(30, 30);
+            this.rep_btn.MinimumSize = new System.Drawing.Size(30, 30);
+            this.rep_btn.Name = "rep_btn";
+            this.rep_btn.Size = new System.Drawing.Size(30, 30);
+            this.rep_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rep_btn.TabIndex = 9;
+            this.rep_btn.TabStop = false;
+            this.rep_btn.Click += new System.EventHandler(this.rep_btn_Click);
+            // 
+            // hid_btn
+            // 
+            this.hid_btn.BackgroundImage = global::Launch.Properties.Resources.Скриншот_14_04_2020_023602;
+            this.hid_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.hid_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hid_btn.FlatAppearance.BorderSize = 0;
+            this.hid_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hid_btn.Location = new System.Drawing.Point(3, 8);
+            this.hid_btn.Name = "hid_btn";
+            this.hid_btn.Size = new System.Drawing.Size(22, 19);
+            this.hid_btn.TabIndex = 10;
+            this.hid_btn.UseVisualStyleBackColor = true;
+            this.hid_btn.Click += new System.EventHandler(this.hid_btn_Click);
+            this.hid_btn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hid_btn_MouseDown);
+            this.hid_btn.MouseLeave += new System.EventHandler(this.hid_btn_MouseLeave);
+            this.hid_btn.MouseMove += new System.Windows.Forms.MouseEventHandler(this.hid_btn_MouseMove);
             // 
             // Form
             // 
@@ -172,7 +205,8 @@
             this.BackgroundImage = global::Launch.Properties.Resources.Sweetie_Bot_v_2_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 332);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.hid_btn);
+            this.Controls.Add(this.rep_btn);
             this.Controls.Add(this.draggy);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.gif);
@@ -189,6 +223,7 @@
             this.Text = "8-bit";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gif)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rep_btn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,7 +239,8 @@
         private System.Windows.Forms.Button ex_btn;
         private System.Windows.Forms.PictureBox gif;
         private System.Windows.Forms.Panel draggy;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox rep_btn;
+        private System.Windows.Forms.Button hid_btn;
     }
 }
 

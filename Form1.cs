@@ -20,10 +20,12 @@ namespace Launch
 
         private Point mouseOffset;
         private bool isMouseDown = false;
+        bool isrep = false;
 
         public Form()
         {
             InitializeComponent();
+
 
             gif.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -35,6 +37,7 @@ namespace Launch
             this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             Title.BackColor = Color.Transparent;
             gif.BackColor = Color.Transparent;
+            rep_btn.BackColor = Color.Transparent;
 
             //круглые кнопки
             System.Drawing.Drawing2D.GraphicsPath myPath =
@@ -49,6 +52,7 @@ namespace Launch
         {
             gif.Hide();
             Title.Text = "Что послушаем?";
+            rep_btn.Image = Properties.Resources.iconfinder_Gnome_Media_Playlist_Repeat_32_55080;
 
         }
 
@@ -73,7 +77,10 @@ namespace Launch
         {
             gif.Show();
 
-            s3.Play();
+            if (isrep)
+                s3.PlayLooping();
+            else
+                s3.Play();
 
             Title.Font = plf;
             Title.Text = "Сейчас играет: I'm Blue 8-bit";
@@ -88,7 +95,11 @@ namespace Launch
         {
             gif.Show();
 
-            s1.Play();
+
+            if (isrep)
+                s1.PlayLooping();
+            else
+                s1.Play();
 
             Title.Font = plf;
             Title.Text = "Сейчас играет:\n TheFatRat - Unity";
@@ -98,7 +109,11 @@ namespace Launch
         {
             gif.Show();
 
-            s2.Play();
+
+            if (isrep)
+                s2.PlayLooping();
+            else
+                s2.Play();
 
             Title.Font = plf;
             Title.Text = "Сейчас играет: Bad Guy 8-bit";
@@ -141,9 +156,82 @@ namespace Launch
         }
         #endregion
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void rep_btn_Click(object sender, EventArgs e)
+        {
+            if (isrep)
+            {
+                rep_btn.Image = Properties.Resources.iconfinder_Gnome_Media_Playlist_Repeat_32_55080;
+            }
+            else
+            {
+                rep_btn.Image = Properties.Resources.iconfinder_arrow_repeat_once_45844;
+            }
+
+            isrep = !isrep;
+        }
+
+        
+
+        private void soundbtn_MouseLeave(object sender, EventArgs e)
+        {
+            soundbtn.Image = Properties.Resources.sound_off;
+        }
+
+        private void soundbtn_MouseDown(object sender, MouseEventArgs e)
+        {
+            soundbtn.Image = Properties.Resources.i01_sound_off__1_;
+        }
+
+        private void soundbtn_MouseMove(object sender, MouseEventArgs e)
+        {
+            soundbtn.Image = Properties.Resources.i01_sound_off;
+
+        }
+
+        private void hid_btn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void hid_btn_MouseDown(object sender, MouseEventArgs e)
+        {
+            hid_btn.BackgroundImage = Properties.Resources.i01_Скриншот_14_04_2020_023602__1_;
+        }
+
+        private void hid_btn_MouseMove(object sender, MouseEventArgs e)
+        {
+            hid_btn.BackgroundImage = Properties.Resources.i01_Скриншот_14_04_2020_023602;
+        }
+
+        private void hid_btn_MouseLeave(object sender, EventArgs e)
+        {
+            hid_btn.BackgroundImage = Properties.Resources.Скриншот_14_04_2020_023602;
+        }
+
+        private void ex_btn_MouseMove(object sender, MouseEventArgs e)
+        {
+            ex_btn.BackgroundImage = Properties.Resources.i01_61xXvEXqjbL__SL1313_;
+        }
+
+        private void ex_btn_MouseLeave(object sender, EventArgs e)
+        {
+            ex_btn.BackgroundImage = Properties.Resources._61xXvEXqjbL__SL1313_;
+        }
+
+        private void ex_btn_MouseDown(object sender, MouseEventArgs e)
+        {
+            ex_btn.BackgroundImage = Properties.Resources.i01_61xXvEXqjbL__SL1313___1_;
+        }
+
+        private void gif_MouseEnter(object sender, EventArgs e)
+        {
+            gif.Image = Properties.Resources.Папуг;
+        }
+
+        private void gif_MouseLeave(object sender, EventArgs e)
+        {
+            gif.Image = Properties.Resources._6oa;
         }
     }
 }

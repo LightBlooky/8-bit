@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Скриншот 14-04-2020 023602" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Скриншот 14-04-2020 023602.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_6oa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6oa.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,7 +145,31 @@
   <data name="electric_blue_text_symbol_music_removebg_preview__1___1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\electric-blue-text-symbol-music-removebg-preview (1) (1).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Скриншот 14-04-2020 023602" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Скриншот 14-04-2020 023602.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="i01_sound_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i01_sound_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_arrow_repeat_once_45844" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_arrow-repeat-once_45844.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_Gnome_Media_Playlist_Repeat_32_55080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_Gnome-Media-Playlist-Repeat-32_55080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i01_sound_off__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i01_sound_off (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i01_Скриншот_14_04_2020_023602" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i01_Скриншот 14-04-2020 023602.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i01_Скриншот_14_04_2020_023602__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i01_Скриншот 14-04-2020 023602 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i01_61xXvEXqjbL__SL1313_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i01_61xXvEXqjbL._SL1313_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i01_61xXvEXqjbL__SL1313___1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i01_61xXvEXqjbL._SL1313_ (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Папуг" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Папуг.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

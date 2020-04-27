@@ -125,6 +125,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="electric-blue-text-symbol-music-removebg-preview %281%29 %281%29.ico" />
+    <None Include="Resources\Папуг.png" />
+    <None Include="Resources\i01_61xXvEXqjbL._SL1313_ %281%29.jpg" />
+    <None Include="Resources\i01_61xXvEXqjbL._SL1313_.jpg" />
+    <None Include="Resources\i01_Скриншот 14-04-2020 023602 %281%29.png" />
+    <None Include="Resources\i01_Скриншот 14-04-2020 023602.png" />
+    <None Include="Resources\i01_sound_off %281%29.png" />
+    <None Include="Resources\i01_sound_off.png" />
+    <None Include="Resources\iconfinder_Gnome-Media-Playlist-Repeat-32_55080.png" />
+    <None Include="Resources\iconfinder_arrow-repeat-once_45844.png" />
     <None Include="Resources\Скриншот 14-04-2020 023602.png" />
     <None Include="Resources\Скриншот 14-04-2020 023046.png" />
     <None Include="Resources\Безымянный.png" />
